@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <title>Share Steak King IT Support</title>
@@ -10,47 +9,65 @@
     html, body {
       height: 100%;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
-    div {
-      border: none;
-      width:100%; 
-      height:100%;
-      margin:auto;
-      padding: auto;
+
+    .container {
+      max-width: 600px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    img { 
-      border: none;
-      width:auto; 
-      height:100vh;
-      display: block;
-      margin: 0 auto; /* centers horizontally */
+
+    h1 {
+      color: #b22222;
+      margin-bottom: 20px;
     }
-    .back-button {
-      position: fixed;
-      top: 40px;
-      left: 40px;
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 50vh;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    .support-link {
+      display: inline-block;
       background-color: #66a9d6;
       color: black;
-      padding: 24px 40px;
-      border: none;
+      padding: 14px 28px;
       border-radius: 6px;
       font-size: 16px;
-      cursor: pointer;
       text-decoration: none;
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
     }
-    .back-button:hover {
+
+    .support-link:hover {
       background-color: #00ffea;
     }
   </style>
-  
 </head>
 <body>
-  <div>
-    <img src="images/share_QR.png">
+  <div class="container">
+    <h1>STEAK KING IT SUPPORT</h1>
+    <p>Submit any technical support queries, complaints, or issues to us.</p>
+    <img src="images/customer_service_qr.png" alt="Customer Service QR Code">
+    <a href="https://steak-king-support.github.io/it-support/" class="support-link">Submit a Ticket</a>
   </div>
-
-  <!-- Back button -->
-  <a href="https://steak-king-support.github.io/it-support/" class="back-button">Submit a ticket</a>
 </body>
 </html>
